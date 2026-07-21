@@ -1,0 +1,113 @@
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'segoe', sans-serif;
+    }
+
+body{
+    background-color: #71b7e6;
+    display: flex;
+    justify-content: center;
+    align-item: center;
+    min-height: 100vh;
+    }
+
+.todo{
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0.10px 30px rgba(0,0,0,0.1);
+    }
+
+h1{
+    color: #333;
+    margin-button: 20px;
+    text-align: center;
+    font-size: 25px;
+    }
+
+.input{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    }
+
+#todo-input{
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 2px solid #e0e0e0;
+    outline: none;
+    transition: border-color 0.3s;
+    }
+
+#todo-input:focus{
+    border-color: 9b59b6;
+    }
+
+#add-btn{
+    padding: 12px 20px;
+    color: white;
+    background-color: #9b59b6;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+    }
+
+#add-btn:hover{
+    background-color: #8e44ad;
+    }
+
+#todo-list{
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+    }
+
+#todo-list li{
+    background: #f9f9f9;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #9b59b6;
+    transition: all 0.3 ease;
+    }
+
+#todo-list li.completed{
+    border-left-color: #2ecc71;
+    background: #fofofo;
+    text-decoration: line-through;
+    color: #aaa;
+    }
+
+.task-text{
+    cursor: pointer;
+    flex: 1;
+    word-break: break-all;
+    padding-right: 10px;
+    }
+
+.delete-btn{
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: bckground 0.3s;
+    }
+
+.delete-btn:hover{
+    background: #c0392b;
+    }
